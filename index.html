@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #212121;
+        }
+
+        h1 {
+            color: aliceblue;
+        }
+
+        p {
+            margin: 8px;
+            color: azure;
+        }
+
+        .box {
+            padding: 5px;
+            margin: 5px;
+            background-color: rgb(213, 141, 7);
+            width: 50px;
+            height: 30px;
+            border-radius: 10%;
+            border: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <h1>Numbe rguessing game</h1>
+        <p>Try and guess a random number between 1 and 100</p>
+        <p>you have 10 attempts to guess the right number</p>
+        <br>
+        <form class="front">
+            <label for="guessField" id="h=guess" style="color: aliceblue">Guess a number</label>
+            <input type="text" id="guessField" class="guessField">
+            <input type="submit" id="submit" value="submit guess" class="guessSubmit">
+        </form>
+
+        <div class="resultParas">
+            <p>previous guessses: <span class="guesses"></span> </p>
+            <p>Guesses remaining: <span class="lastResult">10</span> </p>
+            <p class="lowOrHi"></p>
+            <button></button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
